@@ -18,8 +18,8 @@ resource "aws_instance" "web" {
 
   provisioner "remote-exec" {
     inline = [
-     "sudo amazon-linux-extras install -y nginx1",
-     "sudo systemctl start nginx"
+      "sudo amazon-linux-extras install -y nginx1",
+      "sudo systemctl start nginx"
     ]
   }
 }
