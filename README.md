@@ -18,17 +18,24 @@ Commands
 
 ```
 terraform init
+terraform fmt
+terraform validate
 terraform plan
 terraform apply
-```
-
-```
 terraform destroy
-terraform destroy -target aws_instance.web
 ```
 
 ```
+terraform import
 terraform refresh
+terraform show
+terraform state
+terraform taint
+terraform workspace
 ```
 
 Terraform Cloud: https://cloud.hashicorp.com/products/terraform
+
+Resources:
+
+- https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a
