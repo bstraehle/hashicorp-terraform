@@ -31,3 +31,4 @@ terraform destroy
 Resources:
 
 - https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a
+- https://learn.hashicorp.com/tutorials/terraform/eks?in=terraform/kubernetes
