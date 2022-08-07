@@ -24,16 +24,8 @@ terraform plan
 terraform apply
 terraform show
 terraform state list
+terraform output
 terraform destroy
-```
-
-```
-terraform import
-terraform refresh
-terraform show
-terraform state
-terraform taint
-terraform workspace
 ```
 
 Terraform Cloud: https://cloud.hashicorp.com/products/terraform
