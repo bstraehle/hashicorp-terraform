@@ -4,7 +4,7 @@ Terraform is an open-source, infrastructure as code, software tool created by Ha
 
 See https://www.terraform.io/downloads
 
-Install Terraform
+Install Terraform:
 
 ```
 sudo yum install -y yum-utils
@@ -14,7 +14,7 @@ sudo yum -y install terraform
 
 See https://registry.terraform.io/browse/providers
 
-Commands
+Commands:
 
 ```
 terraform init
