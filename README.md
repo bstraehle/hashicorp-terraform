@@ -22,6 +22,8 @@ terraform fmt
 terraform validate
 terraform plan
 terraform apply
+terraform show
+terraform state list
 terraform destroy
 ```
 
