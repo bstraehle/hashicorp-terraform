@@ -1,10 +1,23 @@
-provider "aws" {
-  region     = "us-west-2"
-  access_key = "<access-key>"
-  secret_key = "<secret-key>"
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.16"
+    }
+  }
+
+  required_version = ">= 1.2.0"
 }
 
-resource "aws_instance" "web" {
-  ami           = "ami-082b5a644766e0e6f"
+provider "aws" {
+  region  = "us-west-2"
+}
+
+resource "aws_instance" "app_server" {
+  ami           = "ami-830c94e3"
   instance_type = "t2.micro"
+
+  tags = {
+    Name = "ExampleAppServerInstance"
+  }
 }
