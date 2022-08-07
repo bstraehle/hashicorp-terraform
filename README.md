@@ -12,6 +12,8 @@ sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinu
 sudo yum -y install terraform
 ```
 
+Terraform Cloud: https://cloud.hashicorp.com/products/terraform
+
 Commands:
 
 ```
@@ -25,8 +27,6 @@ terraform state list
 terraform output
 terraform destroy
 ```
-
-Terraform Cloud: https://cloud.hashicorp.com/products/terraform
 
 Resources:
 
