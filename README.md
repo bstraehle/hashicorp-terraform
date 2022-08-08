@@ -26,6 +26,7 @@ terraform show
 terraform state list
 terraform output
 terraform destroy
+terraform import
 ```
 
 Resources:
