@@ -24,7 +24,6 @@ terraform apply
 terraform fmt
 terraform validate
 
-terraform graph
 terraform import
 terraform output
 terraform refresh
@@ -32,6 +31,14 @@ terraform show
 terraform state list
 
 terraform destroy
+```
+
+```
+terraform graph > graph.dot
+
+sudo yum install graphviz
+
+cat graph.dot | dot -Tsvg > graph.svg
 ```
 
 Resources:
