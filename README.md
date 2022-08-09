@@ -24,12 +24,6 @@ terraform apply
 terraform fmt
 terraform validate
 
-terraform import
-terraform output
-terraform refresh
-terraform show
-terraform state list
-
 terraform destroy
 ```
 
@@ -45,3 +39,4 @@ Resources:
 
 - https://learn.hashicorp.com/tutorials/terraform/eks
 - https://learn.hashicorp.com/tutorials/terraform/kubernetes-provider
+- https://learn.hashicorp.com/tutorials/terraform/associate-study
