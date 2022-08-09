@@ -43,4 +43,5 @@ cat graph.dot | dot -Tsvg > graph.svg
 
 Resources:
 
-- https://learn.hashicorp.com/tutorials/terraform/eks?in=terraform/kubernetes
+- https://learn.hashicorp.com/tutorials/terraform/eks
+- https://learn.hashicorp.com/tutorials/terraform/kubernetes-provider
