@@ -2,9 +2,9 @@
 
 Terraform is an open-source, infrastructure as code, software tool created by HashiCorp. Users define and provide data center infrastructure using a declarative configuration language known as HashiCorp Configuration Language, or optionally JSON.
 
-See https://www.terraform.io
+See https://www.terraform.io/downloads
 
-Install Terraform:
+Install on Amazon Linux:
 
 ```
 sudo yum install -y yum-utils
@@ -25,11 +25,12 @@ terraform apply
 terraform show
 terraform state list
 terraform output
-terraform destroy
+terraform refresh
 terraform import
+terraform destroy
 ```
 
 Resources:
 
-- https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a
 - https://learn.hashicorp.com/tutorials/terraform/eks?in=terraform/kubernetes
+- https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a
