@@ -18,15 +18,19 @@ Commands:
 
 ```
 terraform init
-terraform fmt
-terraform validate
 terraform plan
 terraform apply
-terraform show
-terraform state list
+
+terraform fmt
+terraform validate
+
+terraform graph
+terraform import
 terraform output
 terraform refresh
-terraform import
+terraform show
+terraform state list
+
 terraform destroy
 ```
 
