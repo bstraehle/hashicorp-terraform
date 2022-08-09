@@ -40,3 +40,8 @@ Resources:
 - https://learn.hashicorp.com/tutorials/terraform/eks
 - https://learn.hashicorp.com/tutorials/terraform/kubernetes-provider
 - https://learn.hashicorp.com/tutorials/terraform/associate-study
+
+```
+aws eks --region $(terraform output -raw region) update-kubeconfig \
+    --name $(terraform output -raw cluster_name)
+```
