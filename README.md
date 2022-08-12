@@ -35,12 +35,6 @@ sudo yum install graphviz
 cat graph.dot | dot -Tsvg > graph.svg
 ```
 
-Resources:
-
-- https://learn.hashicorp.com/tutorials/terraform/eks
-- https://learn.hashicorp.com/tutorials/terraform/kubernetes-provider
-- https://learn.hashicorp.com/tutorials/terraform/associate-study
-
 ```
 export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
 export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
@@ -49,3 +43,9 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 ```
 aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terraform output -raw cluster_name)
 ```
+
+Resources:
+
+- https://learn.hashicorp.com/tutorials/terraform/eks
+- https://learn.hashicorp.com/tutorials/terraform/kubernetes-provider
+- https://learn.hashicorp.com/tutorials/terraform/associate-study
