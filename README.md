@@ -47,5 +47,6 @@ aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terr
 Resources:
 
 - https://learn.hashicorp.com/tutorials/terraform/eks
+- https://learn.hashicorp.com/tutorials/terraform/aks
+- https://learn.hashicorp.com/tutorials/terraform/gke
 - https://learn.hashicorp.com/tutorials/terraform/kubernetes-provider
-- https://learn.hashicorp.com/tutorials/terraform/associate-study
