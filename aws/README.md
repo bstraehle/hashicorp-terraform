@@ -9,5 +9,5 @@ aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terr
 
 ```
 kubectl cluster-info
-kubectl get nodes
+kubectl get nodes,services,pods
 ```
