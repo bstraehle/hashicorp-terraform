@@ -11,3 +11,7 @@ aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terr
 kubectl cluster-info
 kubectl get nodes,services,pods
 ```
+
+```
+scp -i DemoKeyPair.pem ec2-user@ec2-54-202-47-195.us-west-2.compute.amazonaws.com:/home/ec2-user/terraform-eks/*.tf c:/temp/*.tf
+```
