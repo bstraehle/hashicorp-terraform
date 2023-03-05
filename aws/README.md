@@ -1,5 +1,5 @@
 ```
-ssh -i "DemoKeyPair.pem" ec2-user@ec2-54-202-47-195.us-west-2.compute.amazonaws.com
+ssh -i "<key-pair>.pem" ec2-user@<instance>.<region>.compute.amazonaws.com
 ```
 
 ```
@@ -13,17 +13,8 @@ Run script in eks folder
 aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terraform output -raw cluster_name)
 ```
 
-```
-kubectl cluster-info
-kubectl get nodes
-```
-
 Run script in kubernetes folder
 
 ```
-kubectl get services,pods
-```
-
-```
-scp -i DemoKeyPair.pem ec2-user@ec2-54-202-47-195.us-west-2.compute.amazonaws.com:/home/ec2-user/terraform-eks/*.tf c:/temp/
+kubectl get nodes,services,pods
 ```
