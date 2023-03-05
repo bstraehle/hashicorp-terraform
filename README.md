@@ -24,14 +24,6 @@ terraform apply
 terraform destroy
 ```
 
-```
-terraform graph > graph.dot
-
-sudo yum install graphviz
-
-cat graph.dot | dot -Tsvg > graph.svg
-```
-
 Resources:
 
 - https://learn.hashicorp.com/tutorials/terraform/eks
