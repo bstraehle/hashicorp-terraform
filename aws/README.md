@@ -1,5 +1,5 @@
 ```
-ssh -i "<key-pair>.pem" ec2-user@<instance>.<region>.compute.amazonaws.com
+ssh -i <key-pair>.pem ec2-user@<public-ipv4-address>
 ```
 
 ```
