@@ -22,7 +22,7 @@ terraform apply
 terraform destroy
 ```
 
-## Example: Kubernetes Cluster and Resource Provisioning
+## Example: EKS Cluster and Kubernetes Resource Provisioning
 
 ```
 ssh -i <key-pair>.pem ec2-user@<public-ipv4-address>
