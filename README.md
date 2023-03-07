@@ -1,6 +1,6 @@
 # Terraform
 
-Terraform is an open-source infrastructure as code software tool created by HashiCorp. Users define and provision data center infrastructure using a declarative configuration language known as HashiCorp Configuration Language (HCL), or optionally JSON.
+Terraform is an open-source infrastructure as code software tool created by HashiCorp. Users define and provide data center infrastructure using a declarative configuration language known as HashiCorp Configuration Language (HCL), or optionally JSON.
 
 See https://www.terraform.io/downloads, https://registry.terraform.io, and https://cloud.hashicorp.com/products/terraform.
 
@@ -33,13 +33,13 @@ export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
 export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 ```
 
-- Run scripts in eks folder
+- Init/plan/apply files in eks directory
 
 ```
 aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terraform output -raw cluster_name)
 ```
 
-- Run script in kubernetes folder
+- Init/plan/apply file in kubernetes directory
 
 ```
 kubectl get nodes,services,pods
