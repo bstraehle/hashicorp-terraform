@@ -42,7 +42,7 @@ aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terr
 - Init/plan/apply file in kubernetes directory
 
 ```
-kubectl get nodes,services,pods
+kubectl get nodes,services,deployments
 ```
 
 ## Resources
