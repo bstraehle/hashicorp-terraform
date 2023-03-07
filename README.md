@@ -19,7 +19,7 @@ terraform init
 terraform plan
 terraform apply -auto-approve
 
-terraform destroy
+terraform destroy -auto-approve
 ```
 
 ## Example: EKS Cluster and Kubernetes Resource Provisioning
