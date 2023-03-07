@@ -47,7 +47,8 @@ resource "kubernetes_deployment" "rest-api" {
   metadata {
     name = "rest-api"
     labels = {
-      App = "rest-api"
+      App = "rest-api",
+      Version = "1.0.0"
     }
   }
 
@@ -55,13 +56,15 @@ resource "kubernetes_deployment" "rest-api" {
     replicas = 2
     selector {
       match_labels = {
-        App = "rest-api"
+        App = "rest-api",
+        Version = "1.0.0"
       }
     }
     template {
       metadata {
         labels = {
-          App = "rest-api"
+          App = "rest-api",
+          Version = "1.0.0"
         }
       }
       spec {
@@ -93,7 +96,8 @@ resource "kubernetes_deployment" "mvc-app" {
   metadata {
     name = "mvc-app"
     labels = {
-      App = "mvc-app"
+      App = "mvc-app",
+      Version = "1.0.0"
     }
   }
 
@@ -101,13 +105,15 @@ resource "kubernetes_deployment" "mvc-app" {
     replicas = 2
     selector {
       match_labels = {
-        App = "mvc-app"
+        App = "mvc-app",
+        Version = "1.0.0"
       }
     }
     template {
       metadata {
         labels = {
-          App = "mvc-app"
+          App = "mvc-app",
+          Version = "1.0.0"
         }
       }
       spec {
